@@ -1,0 +1,54 @@
+<div class="classify">
+	<p>
+	    <a href="" ng-class="{hotsort:curIndex==-1}" ng-click="showImg(-1,'')">全部</a>
+	    <a href="" ng-repeat="string in sorts" ng-click="showImg($index,string)" ng-class="{hotsort:curIndex==$index}">{{string}}</a>
+	    <a href="" ng-class="{hotsort:curIndex==-2}" ng-click="showImg(-2,'a')">其他</a>
+	</p>
+	<p>
+		<a href="">筹资中</a>
+		<a href="">即将结束</a>
+		<a href="" class="hotsort">已成功</a>
+	</p>
+	<p>
+		<a href="" class="hotsort">最新</a>
+		<a href="">热门</a>
+		<a href="">结束时间</a>
+	</p>
+</div>
+
+<div class="detail-content">
+	<div class="tv-recommend clear">
+	 	<div class="movie-mod" ng-repeat="item in detailAttr | filter:filterFn ">
+	 		<img ng-src="{{item.img}}" alt="" ui-sref="detail({index:$index})">
+	 		<h1>{{item.name}}</h1>
+	 		<h2>{{item.author}}</h2>
+	 		<h3>{{item.introduce}}</h3>
+	 		<h4>{{item.sort}}</h4>
+	 		<h5>
+	 		  <p ng-style={width:item.progress}></p>
+	 		</h5>
+	 		<h6 class="clear">
+	        	<p>
+	        	   <span class="number">{{item.progress}}</span><span>进度</span>
+	        	</p>
+	        	<p>
+	        	   <span class="number">{{item.supportprice}}</span><span>支持金额</span>
+	        	</p>
+	        	<p>
+	        	   <span class="number">{{item.days}}</span><span>剩余天数</span>
+	        	</p>
+	        </h6>
+	 	</div>
+	</div>
+</div>
+<div class="page">
+	<span class="active">1</span>
+	<span>2</span>
+	<span>3</span>
+	<span>4</span>
+	<span>5</span>
+	<span>6</span>
+	<span class="more">...</span>
+	<span>&gt;</span>
+	<span>尾页</span>
+</div>

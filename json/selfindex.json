@@ -1,0 +1,106 @@
+[
+   {
+	   	"list1":[
+	   		{
+		        "name": "《犹太人在上海》音乐剧",
+		        "author": "by 恒源祥戏剧创意",
+		        "progress": "48%",
+		        "supportprice":"¥15,498",
+		        "img": "image/selfindex-img1.png"
+		    },
+		    {
+		        "name": "《鬼吹灯》微电影周剧",
+		        "author": "by 上海微影视",
+		        "progress": "100%",
+		        "supportprice":"¥100,000",
+		        "img": "image/tv-image2.png"
+		    },
+		    {
+		        "img": "image/tv-image3.png",
+		        "name": "《战马》音乐剧",
+		        "author": "by 上海戏剧学院",
+		        "progress": "120%",
+		        "supportprice":"¥62,590"
+		    },
+		    {
+		        "name": "《犹太人在上海》音乐剧",
+		        "author": "by 恒源祥戏剧创意",
+		        "progress": "48%",
+		        "supportprice":"¥15,498",
+		        "img": "image/selfindex-img1.png"
+		    }
+	    ],
+
+	   	"list2":[
+	   		{
+		        "name": "《犹太人在上海》音乐剧",
+		        "author": "by 恒源祥戏剧创意",
+		        "introduce": "中国、以色列联合创作的大型音乐剧《犹太人在上海》以音乐剧这一公认最具挑战性的艺术形式...",
+		        "sort": "音乐剧",
+		        "progress": "48%",
+		        "supportprice":"¥15,498",
+		        "days":"6",
+		        "img": "image/selfindex-img2.png"
+		    },
+		    {
+		        "name": "《鬼吹灯》微电影周剧",
+		        "author": "by 上海微影视",
+		        "introduce": "《鬼吹灯》是一部中国大陆的网络小说，作者为天下霸唱，主要内容是盗墓寻宝",
+		        "sort": "微电影",
+		        "progress": "100%",
+		        "supportprice":"¥100,000",
+		        "days":"3",
+		        "img": "image/tv-image2.png"
+		    },
+		    {
+		        "img": "image/tv-image3.png",
+		        "name": "《战马》音乐剧",
+		        "author": "by 上海戏剧学院",
+		        "introduce": "《战马》改编自英国桂冠作家麦克·莫波格的同名小说,是一部影响力很广的...",
+		        "sort": "音乐剧",
+		        "progress": "120%",
+		        "supportprice":"¥62,590",
+		        "days":"18"
+		    }
+	   	],
+        "list3": [
+            {
+                "oid": "6",
+                "rprice": "1",
+                "status": "1",
+                "id": "4",
+                "fname": "万娱引力",
+                "name": "触电来袭：互动演出鬼吹灯",
+                "img": "image/image.png"
+            },
+            {
+                "oid": "7",
+                "rprice": "79",
+                "status": "0",
+                "id": "5",
+                "fname": "人人娱乐",
+                "name": "史上最高颜值天团等你来加油",
+                "img": "image/image.png"
+            },
+            {
+                "oid": "8",
+                "rprice": "1",
+                "status": "0",
+                "id": "4",
+                "fname": "万娱引力",
+                "name": "触电来袭：互动演出鬼吹灯",
+                "img": "image/image.png"
+            },
+            {
+                "oid": "9",
+                "rprice": "99",
+                "status": "1",
+                "id": "3",
+                "fname": "上海传媒",
+                "name": "《未来十年》电影众筹",
+                "img": "image/image.png"
+            }
+        ]
+
+   }
+]

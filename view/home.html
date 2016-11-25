@@ -1,0 +1,111 @@
+<div class="homepage">
+	<div class="banner">
+		<a href="#/detail" ng-repeat="string in dataAttr" ng-style="{zIndex:showIndex==$index ? '2':'0'}"><img ng-src="{{string}}" alt="">
+		</a>
+		<p ng-repeat="string in name" class="banner-name" ng-style="{zIndex:showIndex==$index ? '5':'0'}">{{string}}</p>
+		<p ng-repeat="string in introduce" class="banner-introduce" ng-style="{zIndex:showIndex==$index ? '5':'0'}">{{string}}</p>
+		<img ng-click="prev()" ng-src="image/prev-btn.png" alt="" class="prev-btn">
+		<img ng-click="next()" ng-src="image/next-btn.png" alt="" class="next-btn">
+		<div class="hoverIcon">
+			<span ng-repeat="str in dataAttr" ng-class="{active:showIndex==$index}" ng-mouseover="end($index)" ng-mouseout="start()">{{$index+1}}</span>
+	    </div>
+		<a ui-sref="detail({index:0})" class="detail-btn"><img ng-src="image/detail-btn.png" alt=""></a>
+    </div>
+	<div class="hot-project">
+	    <div class="container clear">
+	    	<ul class="project-left">
+	    		<li class="title clear">
+	    		     <span>热门项目</span><a href="#">查看更多</a>
+	    		</li>
+	    		<li class="content clear" ui-view>
+	    			<img src="{{currentMessage.img}}" alt="">
+	    			<div class="content-right">
+	    				<h3 ng-bind="currentMessage.name"></h3>
+	    				<p class="company">{{currentMessage.author}}</p>
+	    				<p class="mo-intro">{{currentMessage.introduce}}</p>
+
+	    				<p><span class="drama">{{currentMessage.sort}}</span><span class="tv-rec"></span></p>
+                        <h4>
+                        	<p class="rate-range" ng-style="{width:currentMessage.progress}"></p>
+                        </h4>
+                        <h5 class="clear">
+                        	<p>
+                        	   <span class="number">{{currentMessage.progress}}</span><span>进度</span>
+                        	</p>
+                        	<p>
+                        	   <span class="number">{{currentMessage.supportprice}}</span><span>支持金额</span>
+                        	</p>
+                        	<p>
+                        	   <span class="number">173</span><span>支持者</span>
+                        	</p>
+                        	<p>
+                        	   <span class="number">{{currentMessage.days}}</span><span>剩余天数</span>
+                        	</p>
+                        </h5>
+	    			</div>
+	    		</li>
+    	    </ul>
+    	    <ul class="project-right">
+    	    	<li ng-repeat="x in sort" ng-class="{active:currentIndex == $index}">
+    	    		<a ng-click="showFn($index,x)">{{x}}</a>
+    	    	</li>
+    	    </ul>
+	    </div>
+    	
+    </div>
+    <div class="tv-recommendbox">
+        <div class="container">
+	        <div class="tv-recommend clear">
+		     	<div class="title clear">
+		     		<h3>卫视主推</h3><span><a ui-sref="projectList">查看全部</a></span>
+		     	</div>
+		     	<div class="movie-mod" ng-repeat="item in movieAttr | limitTo:3" >
+		     		<img ng-src="{{item.img}}" alt="">
+		     		<h1>{{item.name}}</h1>
+		     		<h2>{{item.author}}</h2>
+		     		<h3>{{item.introduce}}</h3>
+		     		<h4>{{item.sort}}</h4>
+		     		<h5>
+		     		  <p ng-style="{width:item.progress}"></p>
+		     		</h5>
+		     		<h6 class="clear">
+	                	<p>
+	                	   <span class="number">{{item.progress}}</span><span>进度</span>
+	                	</p>
+	                	<p>
+	                	   <span class="number">{{item.supportprice}}</span><span>支持金额</span>
+	                	</p>
+	                	<p>
+	                	   <span class="number">{{item.days}}</span><span>剩余天数</span>
+	                	</p>
+	                </h6>
+
+		     	</div>
+	        </div>
+	    </div>
+    </div>
+    
+    <div class="col-com">
+        <div class="container">
+        	<h1>合作单位</h1>
+			<div class="company clear">
+				 <p>
+				 	<img src="image/tv-brand1.png" alt="">
+				 </p>
+				 <p>
+				 	<img src="image/tv-brand2.png" alt="">
+				 </p>
+				 <p>
+				 	<img src="image/tv-brand3.png" alt="">
+				 </p>
+				 <p>
+				 	<img src="image/tv-brand1.png" alt="">
+				 </p>
+				 <p>
+				 	<img src="image/tv-brand3.png" alt="">
+				 </p>
+			</div>
+        </div>
+    </div>
+    
+</div>

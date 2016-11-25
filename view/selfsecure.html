@@ -1,0 +1,44 @@
+<div class="selfsecure">
+	<div class="secure-title">
+		<a href="" ng-repeat="item in choseAttr" ng-class="{active:showIndex==$index}" ng-click="choice($index)">{{item.name}}</a>
+	</div>
+	<form action="" method="get" name="myForm" ng-model="myForm" novalidate>
+	    <div class="secure-centent">
+		    <div class="centent-mPaword" ng-show="showIndex==0">
+		    	<p><span class="leftbar">当前密码</span><input type="password" class="password"></p>
+				<p><span class="leftbar">新密码</span><input class="password" type="password"><span class="pasTip">(不少于6位)</span></p>
+				<p><span class="leftbar">已绑定手机</span><span class="phone-num">158****8888</span></p>
+				<div class="special-prompt">
+					<p>
+						<span class="leftbar">验证码</span>
+						<input type="text" class="code" name="code" placeholder="输入验证码" ng-model="code" ng-minlength="6" required>
+						<button type="button" class="code-button">免费获取验证码</button>
+					</p>
+					<p class="prompt" ng-show="myForm.code.$dirty && myForm.code.$error.minlength">验证码错误,请重新输入！ </p>
+				</div>
+				
+				<p class="save-button">保存</p>
+		    </div>
+		    <div class="centent-mPaword" ng-show="showIndex==1">
+		    	<p><span class="leftbar">姓名</span><input type="text" class="password"></p>
+				<div class="special-prompt">
+					<p><span class="leftbar">身份证号</span><input type="text" class="password" ng-model="idnum" required name="idnum" ng-minlength="18"></p>
+					<p class="prompt id-tip" ng-show="myForm.idnum.$dirty && myForm.idnum.$error.minlength">请输入正确的身份证号码 </p>
+				</div>
+				<p class="save-button">保存</p>
+		    </div>
+		     <div class="centent-mPaword" ng-show="showIndex==2">
+		    	<p><span class="leftbar">邮箱地址</span><input type="password" class="password"></p>
+				<div class="special-prompt">
+					<p>
+						<span class="leftbar">验证码</span>
+						<input type="text" class="code" name="code" placeholder="输入验证码" ng-model="code" ng-minlength="6" required>
+						<button type="button" class="code-button">免费获取验证码</button>
+					</p>
+					<p class="prompt" ng-show="myForm.code.$dirty && myForm.code.$error.minlength">验证码错误,请重新输入！ </p>
+				</div>
+				<p class="save-button">保存</p>
+		    </div>
+	    </div>
+	</form>
+</div>

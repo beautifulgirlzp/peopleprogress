@@ -1,0 +1,45 @@
+	<div class="nav-right">
+        <div class="piece">
+        	<div class="theme">
+	    		<p>我关注的项目</p>
+	    	</div>
+	    	<div class="small-picture clear">
+	    		<div class="piece-child clear" ng-repeat="item in smallPicture">
+	    			<a href=""><img ng-src="{{item.img}}" alt=""></a>
+		    		<ul class="img-right" >
+		    			<li class="width0">{{item.name}}</li>
+		    			<li class="width1">{{item.author}}</li>
+		    			<li class="width2"><span ng-style="{width:item.progress}"></span></li>
+		    			<li class="width3">已筹资 <span>{{item.supportprice}}</span></li>
+		    		</ul>
+	    		</div>
+	    	</div>
+        </div>
+    	<div class="piece">
+    		<div class="theme">
+	    		<p>当前最热</p>
+	    	</div>
+	    	<div class="big-picture clear">
+	    		<div class="piece-child1" ng-repeat="item in bigPicture">
+	    			<a href=""><img ng-src="{{item.img}}" alt=""></a>
+	    			<ul>
+	    				<li class="width0">{{item.name}}</li>
+	    				<li class="width1">{{item.introduce}}</li>
+	    				<li class="width2"><span ng-style="{width:item.progress}"></span></li>
+	    				<li class="clear">
+	    					<p>
+				        	   <span class="number">{{item.progress}}</span><span>进度</span>
+				        	</p>
+				        	<p>
+				        	   <span class="number">{{item.supportprice}}</span><span>支持金额</span>
+				        	</p>
+				        	<p>
+				        	   <span class="number">{{item.days}}</span><span>剩余天数</span>
+				        	</p>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    	</div>
+
+		</div>
+    </div>

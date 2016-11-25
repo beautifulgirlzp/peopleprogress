@@ -1,0 +1,65 @@
+.classify {
+  padding: 40px 0px;
+  background-color: #f7fafa;
+  border-bottom: 1px solid #d9d9de;
+  font-family: "微软雅黑";
+  font-size: 14px;
+  color: #666;
+}
+.classify p {
+  padding-left: 75px;
+  margin: 30px 0px;
+}
+.classify p a {
+  margin-right: 20px;
+}
+.classify p .hotsort {
+  background-color: #ff4200;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+.detail-content {
+  padding: 50px 0px 0px;
+}
+.detail-content .tv-recommend {
+  width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+}
+.detail-content .tv-recommend .movie-mod {
+  margin-bottom: 55px;
+  padding-bottom: 20px;
+}
+.detail-content .tv-recommend .movie-mod img {
+  width: 100%;
+  height: 235px;
+}
+.detail-content .tv-recommend .movie-mod:nth-child(3n) {
+  margin-right: 0;
+}
+.page {
+  margin: 10px auto 70px;
+  width: 430px;
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+  font-family: "微软雅黑";
+}
+.page span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d9d9de;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+}
+.page span.active {
+  background-color: #ff4200;
+  border: 0 none;
+  color: white;
+}
+.page span.more {
+  border: none;
+}

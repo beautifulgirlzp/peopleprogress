@@ -1,0 +1,119 @@
+.form-menu {
+  background-color: #f7fafa;
+  /* input:-webkit-autofill {background-color: #FAFFBD;background-image: none;color: #000;}
+	    input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;}
+	        这两行是改变浏览器默认的input框自动填充的属性 */
+}
+.form-menu .clear:after {
+  content: "";
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  display: block;
+}
+.form-menu .clear {
+  -ms-zoom: 1;
+}
+.form-menu h1,
+.form-menu h2,
+.form-menu h3,
+.form-menu h4,
+.form-menu h5,
+.form-menu h6 {
+  font-size: 14px;
+  font-weight: normal;
+}
+.form-menu input {
+  border: 0 none;
+}
+.form-menu form {
+  width: 400px;
+  padding: 60px 0px;
+  margin: 0 auto;
+}
+.form-menu .box {
+  width: 360px;
+  border: 1px solid #dbdbe0;
+  background-color: #fff;
+  padding: 20px 20px 0px;
+}
+.form-menu .title {
+  line-height: 45px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.form-menu .inp-pos {
+  position: relative;
+}
+.form-menu .input-txt {
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 1px solid #dbdbe0;
+  margin-bottom: 40px;
+}
+.form-menu .prompt {
+  width: 350px;
+  line-height: 40px;
+  font-size: 11px;
+  color: #ff0000;
+  padding-left: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.form-menu .prompt-right {
+  float: right;
+  color: #999;
+}
+.form-menu .login-btn {
+  background-color: #2bde73;
+  text-align: center;
+  line-height: 40px;
+  width: 360px;
+  border-radius: 5px;
+}
+.form-menu .rememberme {
+  font-size: 12px;
+  color: #999;
+  line-height: 45px;
+  padding-left: 10px;
+}
+.form-menu .icon {
+  background: url(../image/theme.gif) no-repeat;
+  background-position: -60px top;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.form-menu .icon.active {
+  background: url(../image/theme.gif) no-repeat;
+  background-position: -60px bottom;
+}
+.form-menu fieldset {
+  border-left: 0 none;
+  border-right: 0 none;
+  border-bottom: 0 none;
+}
+.form-menu legend {
+  text-align: center;
+}
+.form-menu .login-style {
+  text-align: center;
+  line-height: 50px;
+}
+.form-menu .footer {
+  background-color: #ccc;
+  line-height: 60px;
+  text-align: center;
+  border: 1px solid #dbdbe0;
+  border-top: 0;
+  width: 400px;
+}
+.form-menu .footer > p > a {
+  color: #00a0ff;
+}

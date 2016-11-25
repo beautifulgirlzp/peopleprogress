@@ -1,0 +1,24 @@
+<div class="selfInfo">
+	<form action="selfInfo_submit" method="post" accept-charset="utf-8">
+	   	<p class="width0"><span class="left-sort">修改图像</span><img src="image/selfInfo-picture.png" alt="" type="button"></p>
+	   	<p><span class="left-sort">用户昵称</span><input type="text" class="input-text"></p>
+	   	<p >
+	   	   <span class="left-sort">性别</span>
+	   	   <span class="sex" ng-click="clickSex(0)">
+		   	   	<span class="radio" ng-class="{active:sexState}"></span>男
+	   	   </span>
+	   	   <span class="sex" ng-click="clickSex(1)">
+		   	   	<span class="radio" ng-class="{active:!sexState}"></span>女
+	   	   </span>
+        </p>
+        <p class="p-special clear">
+        	<span class="left-sort">关注圈子</span>
+        	<a href="" class="sorts">
+        	   <span class="sorts-words" ng-repeat="x in sortwordsAttr" ng-click="clickFn($index)">
+	        	   <span class="square" ng-class="{active:blankAttr[$index]}"></span>{{x}}
+        	   </span>
+			</a>
+        </p>
+        <p class="save-button">保存</p>
+	</form>
+</div>

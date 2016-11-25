@@ -1,0 +1,328 @@
+.homepage{
+	width:100%;
+	.banner{
+		width:100%;
+		position: relative;
+		height:596px;
+        a {
+            display: block;
+            height:596px;
+            position:absolute;
+        }
+        .prev-btn{
+            position:absolute;
+            top:45%;
+            left:5%;
+            z-index:10;
+        }
+        .next-btn{
+            position:absolute;
+            top:45%;
+            right:5%;
+            z-index:10;
+        }
+        .banner-name{
+            position:absolute;
+            top:30%;
+            left:35%;
+            z-index: 5;
+            color:white;
+            font-size: 38px;
+            font-weight: bold;
+        }
+        .banner-introduce{
+            position: absolute;
+            top:40%;
+            left:20%;
+             z-index: 5;
+             font-size: 16px;
+             color:#fff;
+        }
+		a img{
+			position:absolute;
+			top:0px;
+			left:0px;
+		}
+        .hoverIcon{
+            padding:2px;
+            position:absolute;
+            bottom:0px;
+            left: 0px;
+            right: 0px;
+            line-height:20px;
+            background: rgba(0,0,0,.5);
+            z-index:2;
+            text-align: center;
+            span{
+                background-color:#fff;
+                display: inline-block;
+                width:20px;
+                height:20px;
+                margin-right: 5px;
+                &:hover{
+                    background-color: red;
+                }
+                &.active{
+                    background-color: red;
+                }
+            }
+        }
+        .detail-btn{
+          position:absolute;
+          top:350px;
+          left:500px;
+          z-index:2;
+        }
+    }
+    
+	.hot-project{
+	    background-color:#f7fafa;
+	    padding:0px 80px;
+	    border-bottom: 1px solid #d9d9de;
+	    .container{
+	    	padding:50px 0px 60px 0px;
+	    	font-family: '微软雅黑';
+	    	.project-left{
+	    		box-sizing: border-box;
+	    		width:910px;
+	    		float:left;
+	    		padding-right: 50px;
+	    		.title{
+	    	    	line-height: 60px;
+	    	    	margin-bottom:20px;
+	    	    	span{
+	    	    		float:left;
+	    	    		font-size: 18px;
+	    	    		color:#000;
+	    	    		font-weight: bold;
+	    	    	}
+	    	    	a{
+	    	    		float:right;
+	    	    		font-size: 12px;
+	    	    		color:#999;
+	    	    	}
+    	        }
+
+    	        .content{
+    	        	img{
+    	        		float:left;
+    	        		width:315px;
+    	        	}
+    	        	.content-right{
+    	        		width:510px;
+    	        		font-size: 12px;
+    	        		color:#999;
+    	        		font-family: "微软雅黑";
+    	        		float:right;
+    	        		text-align:left;
+    	        		h3{
+    	        			font-size:24px;
+    	        			font-weight: bold;
+    	        			color:#000;
+    	        			line-height:40px;
+    	        		}
+    	        		p{
+                           padding-left: 10px;
+                           overflow: hidden;
+                           &.mo-intro{
+                           	 margin:20px 0px 40px; 
+                           }
+                           span.drama{
+                           	  background: url(../image/drama.png) no-repeat center left;
+                           	  padding-left: 20px;
+                           	  display: inline-block;
+                           	  box-sizing: border-box;
+                           	  width:85px;
+                           }
+                           span.tv-rec{
+                           	  background: url(../image/tv.png) no-repeat center left;
+                           	   display: inline-block;
+                           	    padding-left: 20px;
+                           	    box-sizing: border-box;
+                           	  width:85px;
+                           }
+    	        		}
+    	        		h4{
+    	        			position:relative;
+    	        			width:500px;
+    	        			height:10px;
+    	        			border-radius: 5px;
+    	        			background-color: #d9d9de;
+                            overflow:hidden;
+    	        			margin:10px;
+    	        			.rate-range{
+    	        				width:240px;
+    	        				height:10px;
+    	        				border-radius: 5px;
+    	        				background-color:#ff4200;
+
+    	        			}
+    	        		}
+    	        		h5{
+    	        			p{
+    	        				float:left;
+    	        				span{
+    	        					display:block;
+    	        					margin-right:10px;
+    	        					&.number{
+    	        						font-size: 16px;
+    	        						font-weight: bold;
+    	        						color:#000;
+    	        					}
+    	        				}
+    	        			}
+    	        		}
+    	        	}
+    	        }
+	    	}
+
+	    	.project-right{
+	    		float:right;
+	    		width:120px;
+	    		border-left:1px solid #ccc;
+	    		li{
+	    			border-left:2px solid #fff;
+	    			padding-left: 20px;
+	    			margin:10px 0px;
+	    			line-height: 26px;
+	    			a{
+	    				font-size: 12px;
+	    			    color:#000;
+	    			}
+	    			&.active{
+	    				border-left:2px solid #ff4200;
+	    				a{
+	    					color:#ff4200;
+	    			    }
+	    			}
+	    		}
+	    	}
+    	    
+        }
+    }
+    
+	.tv-recommendbox{
+    		border-bottom: 1px solid #d9d9de;
+		    
+    }
+    .container{
+		    	padding:0px 80px;
+    }
+    .col-com{
+    		padding:50px 0px;
+    		h1{
+    			font-size: 18px;
+    			font-weight: bold;
+    			font-family: "微软雅黑";
+    			line-height: 30px;
+    			margin-bottom: 50px;
+    		}
+    		.company{
+    			margin:0 auto;
+    			p{
+    				float:left;
+    				margin-right:20px;
+    				&:nth-child(5n){
+    					margin-right: 0px;
+    				}
+    			}
+    		}
+    	}
+    
+}
+.tv-recommend{
+    		padding-bottom:75px;
+    		.title{
+    			margin:40px 0px;
+    			font-family: "微软雅黑";
+    			h3{
+    				float:left;
+    	    		font-size: 18px;
+    	    		color:#000;
+    	    		font-weight: bold;
+    	    		line-height: 30px;
+    	    		font-weight: bold;
+    			}
+    			span{
+    				text-align:center;
+    				width:60px;
+    				height:30px;
+    				line-height: 30px;
+    				float:right;
+    				border-radius:5px;
+    				color:#999;
+    				font-size: 11px;
+    				border:1px solid #d9d9de;
+    			}
+    		}
+    		.movie-mod{
+    			width:318px;
+    			margin-right:40px;
+    			border:1px solid #d9d9de;
+    			border-radius: 5px;
+    			float:left;
+    			&:last-child{
+    				margin-right: 0px;
+    			}
+    			*{
+    				font-family: "微软雅黑";
+    			    font-size: 11px;
+    			    color:#999;
+    			    padding-left: 10px;
+    			    padding:0px 10px;
+    			}
+    			img{
+    				padding:0px;
+    				width:100%;
+    			}
+    			h1{
+                  color:#000;
+                  font-size: 14px;
+                  font-weight: bold;
+                  line-height: 35px;
+                  padding:0px;
+    			}
+    			h2{
+                   margin-bottom: 20px;
+    			}
+    			h4{
+    			   padding-left:30px;
+                   background:url(../image/drama.png) no-repeat left 10px center;
+                   margin:30px 0px 10px;
+
+    			}
+    			h5{
+        			height:10px;
+        			width:90%;
+        			border-radius:5px;
+        			background-color: #d9d9de;
+        			margin:10px;
+        			padding:0px;
+        			overflow: hidden;
+        			p{
+        				width:140px;
+        				height:10px;
+        				border-radius:5px;
+        				background-color:#ff4200;
+        			}
+    	        }
+    	        h6{
+        			p{
+        				float:left;
+        				padding: 0px;
+        				span{
+        					display:block;
+        					text-align:left;
+        					padding: 0px;
+        					margin-right:20px;
+        					&.number{
+        						font-size:12px;
+        						font-weight: bold;
+        						color:#000;
+        					}
+        				}
+        			}
+    	        }
+    		}
+    	}
+

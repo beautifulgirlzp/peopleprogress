@@ -1,0 +1,38 @@
+	
+<div class="register-menu">
+ <form action="" method="get" name="myForm" ng-model="myForm" novalidate>
+        <div class="box">
+        	<h1 class="title">注册</h1>
+        	<div class="inp-pos">
+        		<input class="input-txt" type="text" name="phone" placeholder="请输入您的手机号码" ng-model="phone" ng-pattern="/^(1[^012][0-9]{9})$/" required >
+			    <p class="prompt" ng-show="myForm.phone.$dirty && myForm.phone.$error.pattern">您输入的号码有误，请检查！</p>
+        	</div>
+			
+           <!--   -->
+           <div class="inp-pos">
+           	   <div class="especial clear" >
+           	   	  <input class="input-txt " type="text" name="code" placeholder="输入验证码" ng-model="code" ng-minlength="6" required>
+           	      <span class="prompt-right"><a href="" ng-click="sendCode()" ng-bind="description">发送验证码</a></span>
+           	   </div>
+			   <p class="prompt clear" ng-show="myForm.code.$dirty && myForm.code.$error.minlength">验证码错误,请重新输入！ </p>
+           </div>
+			
+			<div class="inp-pos">
+        		<input class="input-txt" type="text" name="password" placeholder="请输入密码,不小于6位" ng-model="password" ng-minlength="6" required >
+			    <p class="prompt" ng-show="myForm.password.$dirty && myForm.password.$error.minlength">请输入大于6位的密码！</p>
+        	</div>
+
+			<div class="login-btn">注册</div>
+			<p class="rememberme class"><span class="icon" ng-click="checkOn()" ng-class="{active:sta}"></span> 同意《全民创造协议》</p>
+			<fieldset>
+				<legend>第三方登录</legend>
+				<p class="login-style"> <span>qq</span> <span>微信</span> <span>新浪</span></p>
+			</fieldset>
+			
+        </div>
+        <div class="footer">
+			<p><span>新用户?</span><a href="#/register">立即注册</a></p>
+	    </div>
+		
+    </form>
+</div>

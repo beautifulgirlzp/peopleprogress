@@ -1,0 +1,35 @@
+<div class="selfindex">
+	<div class="selfcommon-info">
+		<div class="info clear">
+			<div class="info-left">
+				<a href="#"><img src="image/selfindex-man.png" alt=""></a>
+				<div class="small-icon">
+					<a ><img src="image/selfindex-phone.png" alt=""></a>
+					<a href=""><img src="image/selfindex-message.png" alt=""></a>
+					<a href=""><img src="image/selfindex-file.png" alt=""></a>
+				</div>
+			</div>
+			<div class="info-right">
+				<h1>用户HZ17363525 <span>下午好！</span></h1>
+				<h2>
+					<span class="graywords">账户安全等级：</span>
+					<span class="range-gray"><span class="range-color"></span></span>
+					<span class="colorword">中</span>
+				</h2>
+				<h2><span class="graywords">上次登录时间：2015-09-15 18：29：49</span></h2>
+			</div>
+		</div>
+		<div class="parent-box clear">
+			<ul class="left-nav">
+				<li><a ui-sref="selfindex.selfhome" ng-class="{active:curindex==0}" ng-click="checkOn(0)">个人主页</a></li>
+				<li><a ui-sref="selfindex.selfInfo" ng-class="{active:curindex==1}" ng-click="checkOn(1)">个人信息</a></li>
+				<li><a ui-sref="selfindex.selfsecure" ng-class="{active:curindex==2}" ng-click="checkOn(2)">安全设置</a></li>
+				<li><a ui-sref="selfindex.selfcircle" ng-class="{active:curindex==3}" ng-click="checkOn(3)">关注的圈子</a></li>
+				<li><a ui-sref="selfindex.buyRecord" ng-class="{active:curindex==4}" ng-click="checkOn(4)">购买记录</a></li>
+		    </ul>
+		    <div ui-view class="selfindex-container clear">
+		    </div>
+		</div>
+
+	</div>
+</div>

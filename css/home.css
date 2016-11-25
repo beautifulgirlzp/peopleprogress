@@ -1,0 +1,311 @@
+.homepage {
+  width: 100%;
+}
+.homepage .banner {
+  width: 100%;
+  position: relative;
+  height: 596px;
+}
+.homepage .banner a {
+  display: block;
+  height: 596px;
+  position: absolute;
+}
+.homepage .banner .prev-btn {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  z-index: 10;
+}
+.homepage .banner .next-btn {
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  z-index: 10;
+}
+.homepage .banner .banner-name {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  z-index: 5;
+  color: white;
+  font-size: 38px;
+  font-weight: bold;
+}
+.homepage .banner .banner-introduce {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  z-index: 5;
+  font-size: 16px;
+  color: #fff;
+}
+.homepage .banner a img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.homepage .banner .hoverIcon {
+  padding: 2px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  line-height: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  text-align: center;
+}
+.homepage .banner .hoverIcon span {
+  background-color: #fff;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.homepage .banner .hoverIcon span:hover {
+  background-color: red;
+}
+.homepage .banner .hoverIcon span.active {
+  background-color: red;
+}
+.homepage .banner .detail-btn {
+  position: absolute;
+  top: 350px;
+  left: 500px;
+  z-index: 2;
+}
+.homepage .hot-project {
+  background-color: #f7fafa;
+  padding: 0px 80px;
+  border-bottom: 1px solid #d9d9de;
+}
+.homepage .hot-project .container {
+  padding: 50px 0px 60px 0px;
+  font-family: '微软雅黑';
+}
+.homepage .hot-project .container .project-left {
+  box-sizing: border-box;
+  width: 910px;
+  float: left;
+  padding-right: 50px;
+}
+.homepage .hot-project .container .project-left .title {
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.homepage .hot-project .container .project-left .title span {
+  float: left;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+.homepage .hot-project .container .project-left .title a {
+  float: right;
+  font-size: 12px;
+  color: #999;
+}
+.homepage .hot-project .container .project-left .content img {
+  float: left;
+  width: 315px;
+}
+.homepage .hot-project .container .project-left .content .content-right {
+  width: 510px;
+  font-size: 12px;
+  color: #999;
+  font-family: "微软雅黑";
+  float: right;
+  text-align: left;
+}
+.homepage .hot-project .container .project-left .content .content-right h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  line-height: 40px;
+}
+.homepage .hot-project .container .project-left .content .content-right p {
+  padding-left: 10px;
+  overflow: hidden;
+}
+.homepage .hot-project .container .project-left .content .content-right p.mo-intro {
+  margin: 20px 0px 40px;
+}
+.homepage .hot-project .container .project-left .content .content-right p span.drama {
+  background: url(../image/drama.png) no-repeat center left;
+  padding-left: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 85px;
+}
+.homepage .hot-project .container .project-left .content .content-right p span.tv-rec {
+  background: url(../image/tv.png) no-repeat center left;
+  display: inline-block;
+  padding-left: 20px;
+  box-sizing: border-box;
+  width: 85px;
+}
+.homepage .hot-project .container .project-left .content .content-right h4 {
+  position: relative;
+  width: 500px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #d9d9de;
+  overflow: hidden;
+  margin: 10px;
+}
+.homepage .hot-project .container .project-left .content .content-right h4 .rate-range {
+  width: 240px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ff4200;
+}
+.homepage .hot-project .container .project-left .content .content-right h5 p {
+  float: left;
+}
+.homepage .hot-project .container .project-left .content .content-right h5 p span {
+  display: block;
+  margin-right: 10px;
+}
+.homepage .hot-project .container .project-left .content .content-right h5 p span.number {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.homepage .hot-project .container .project-right {
+  float: right;
+  width: 120px;
+  border-left: 1px solid #ccc;
+}
+.homepage .hot-project .container .project-right li {
+  border-left: 2px solid #fff;
+  padding-left: 20px;
+  margin: 10px 0px;
+  line-height: 26px;
+}
+.homepage .hot-project .container .project-right li a {
+  font-size: 12px;
+  color: #000;
+}
+.homepage .hot-project .container .project-right li.active {
+  border-left: 2px solid #ff4200;
+}
+.homepage .hot-project .container .project-right li.active a {
+  color: #ff4200;
+}
+.homepage .tv-recommendbox {
+  border-bottom: 1px solid #d9d9de;
+}
+.homepage .container {
+  padding: 0px 80px;
+}
+.homepage .col-com {
+  padding: 50px 0px;
+}
+.homepage .col-com h1 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "微软雅黑";
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+.homepage .col-com .company {
+  margin: 0 auto;
+}
+.homepage .col-com .company p {
+  float: left;
+  margin-right: 20px;
+}
+.homepage .col-com .company p:nth-child(5n) {
+  margin-right: 0px;
+}
+.tv-recommend {
+  padding-bottom: 75px;
+}
+.tv-recommend .title {
+  margin: 40px 0px;
+  font-family: "微软雅黑";
+}
+.tv-recommend .title h3 {
+  float: left;
+  font-size: 18px;
+  color: #000;
+  line-height: 30px;
+  font-weight: bold;
+}
+.tv-recommend .title span {
+  text-align: center;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  float: right;
+  border-radius: 5px;
+  color: #999;
+  font-size: 11px;
+  border: 1px solid #d9d9de;
+}
+.tv-recommend .movie-mod {
+  width: 318px;
+  margin-right: 40px;
+  border: 1px solid #d9d9de;
+  border-radius: 5px;
+  float: left;
+}
+.tv-recommend .movie-mod:last-child {
+  margin-right: 0px;
+}
+.tv-recommend .movie-mod * {
+  font-family: "微软雅黑";
+  font-size: 11px;
+  color: #999;
+  padding-left: 10px;
+  padding: 0px 10px;
+}
+.tv-recommend .movie-mod img {
+  padding: 0px;
+  width: 100%;
+}
+.tv-recommend .movie-mod h1 {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 35px;
+  padding: 0px;
+}
+.tv-recommend .movie-mod h2 {
+  margin-bottom: 20px;
+}
+.tv-recommend .movie-mod h4 {
+  padding-left: 30px;
+  background: url(../image/drama.png) no-repeat left 10px center;
+  margin: 30px 0px 10px;
+}
+.tv-recommend .movie-mod h5 {
+  height: 10px;
+  width: 90%;
+  border-radius: 5px;
+  background-color: #d9d9de;
+  margin: 10px;
+  padding: 0px;
+  overflow: hidden;
+}
+.tv-recommend .movie-mod h5 p {
+  width: 140px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ff4200;
+}
+.tv-recommend .movie-mod h6 p {
+  float: left;
+  padding: 0px;
+}
+.tv-recommend .movie-mod h6 p span {
+  display: block;
+  text-align: left;
+  padding: 0px;
+  margin-right: 20px;
+}
+.tv-recommend .movie-mod h6 p span.number {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+}

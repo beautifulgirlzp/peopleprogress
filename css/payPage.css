@@ -1,0 +1,71 @@
+.payPage {
+  background: #;
+  padding: 0px 80px;
+}
+.payPage a {
+  display: inline-block;
+  background: #ff4200;
+  padding: 15px 40px;
+  margin: 30px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+}
+.payPage .payPageTop {
+  padding-top: 70px;
+}
+.payPage .payPageTop img {
+  float: right;
+  width: 485px;
+}
+.payPage .payPageTop h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  padding-top: 20px;
+  float: left;
+}
+.payPage > p {
+  margin-top: 50px;
+}
+.payPage .payPageMain-top {
+  margin-top: 50px;
+  border-bottom: 1px solid #dbdbe0;
+}
+.payPage .payPageMain-top > span {
+  float: left;
+  color: #858585;
+  border: 1px solid #dbdbe0;
+  border-bottom: none;
+  padding: 5px 20px;
+  margin-right: 20px;
+}
+.payPage .payPageMain-top > span.active {
+  border: 1px solid #ff4200;
+}
+.payPage .payPageMain-top .payPageMain-cost {
+  float: right;
+}
+.payPage .payPageMain-top .payPageMain-cost span {
+  color: #ff4200;
+  font-size: 20px;
+  font-weight: 700;
+}
+.payPage .payPageMain-middle {
+  padding: 60px 5%;
+  border-bottom: 1px solid #dbdbe0;
+}
+.payPage .payPageMain-middle h1 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.payPage .payPageMain-middle div {
+  margin: 20px 0;
+  width: 20%;
+  float: left;
+}
+.payPage .payPageMain-middle div img {
+  width: 80%;
+  display: inline-block;
+  vertical-align: middle;
+}

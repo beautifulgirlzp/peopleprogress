@@ -1,0 +1,140 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: "微软雅黑";
+}
+.box{
+	padding:70px 0px 100px;
+	width:1200px;
+	margin:0 auto;
+	position:relative;
+	border: 1px solid #ccc;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+	color:#999;
+}
+input{
+	border:0 none;
+	outline:none;
+}
+.clear:after{
+	content:"";
+	height:0;
+	clear:both;
+	display:block;
+	visibility:hidden;
+}
+.clear{
+	-ms-zoom:1;
+}
+.qm-g-header{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	background:#fff;
+	text-align:center;
+	color:#999;
+	line-height:70px;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	border-bottom: 1px solid #d9d9de;
+	.header-left{
+      float:left;
+      width:735px;
+      li{
+      	float:left;
+      	&.li-width1{
+      		color:#000;
+      		font-weight: bold;
+      		width:170px;
+      		font-size: 24px;
+      		text-align: center;
+      		span{
+      			color:#ff3300;
+      		}
+      	}
+      	&.li-width2{
+      		padding:0px 30px;
+      		&.active{
+      			background-color:#f5f6f7;
+      		}
+      	}
+      	&.li-lastwidth{
+      		padding-left: 30px;
+      		border-left: 1px solid #d9d9de;
+      		.icon-search{
+      			width:20px;
+      			height: 70px;
+      			line-height: 70px;
+      			vertical-align:middle;
+      			display:inline-block;
+      			background:url(../image/icon-search.png) no-repeat center left;
+      		}
+      		input{
+      			font-size: 14px;
+      		}
+      	}
+      }
+	}
+	.header-right{
+		float:right;
+		li{
+			width:150px;
+			a{
+				padding:0px 15px;
+				color:#ff3300;
+			}
+		}
+	}
+}
+.qm-g-footer{
+	position:absolute;
+	left:0;
+	bottom:0;
+	right:0;
+	background:#150b09;
+	text-align:center;
+	color:#999;
+    font-family: "微软雅黑";
+	font-size: 14px;
+	height:100px;
+	padding-left: 80px;
+    padding-top:40px;
+    box-sizing: border-box;
+	.footer-left{
+      float:left;
+      li{
+      	float:left;
+      	padding:0px 5px;
+      	border-right: 1px solid #6c6d6f;
+      }
+      li:nth-child(2){
+      	a{
+      		color:#ff3300;
+      	}
+      }
+      li:last-child{
+      	border-right: 0;
+      }
+	}
+	.footer-right{
+		float:right;
+		width:345px;
+		font-size:24px;
+		font-weight: bold;
+		color:#fff;
+		span{
+            color: #ff3300;
+           &.year{
+           	color:#999;
+           	 font-size: 14px;
+           }
+		}
+	}
+}
